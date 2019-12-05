@@ -1,0 +1,26 @@
+- name: Setup Go for use with actions
+  uses: actions/setup-go@v1.0.0
+  with:
+    # The Go version to download (if necessary) and use. Example: 1.9.3
+  
+  
+  
+CREATE TABLE CurrencyConverter ( 
+id INTEGER PRIMARY KEY AUTOINCREMENT, 
+CurrencyCode VARCHAR(20),
+CurrencyRate NUMERIC,
+TradeDate DATETIME,
+MinPrice NUMERIC,
+MaxPrice NUMERIC,
+Hint TEXT )  
+
+CREATE TABLE CurrencyList ( 
+id INTEGER PRIMARY KEY AUTOINCREMENT, 
+CurrencyCode VARCHAR(20)
+)
+
+
+
+    FConfigEmail.FromAddress   := 'infarmadev01@gmail.com';
+    FConfigEmail.UserName      := 'infarmadev01@gmail.com';
+    FConfigEmail.Password      := 'oB0rrP5MS2k8nFz8i1Gg';
