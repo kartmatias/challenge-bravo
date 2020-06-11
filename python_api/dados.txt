@@ -24,3 +24,8 @@ CurrencyCode VARCHAR(20)
     FConfigEmail.FromAddress   := 'infarmadev01@gmail.com';
     FConfigEmail.UserName      := 'infarmadev01@gmail.com';
     FConfigEmail.Password      := 'oB0rrP5MS2k8nFz8i1Gg';
+
+
+
+{SC_LIB_CURRENT}login/img/bg-sample-login-2.jpg
+<IMG src="{SC_IMG_URL}example.png" />

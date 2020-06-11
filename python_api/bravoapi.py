@@ -4,9 +4,21 @@ from sqlalchemy import create_engine
 from json import dumps
 from flask_jsonpify import jsonify
 import requests
+import os
+
+from config import app_config
+
 
 db_connect = create_engine('sqlite:///bravo.db')
+
+# config_name = os.getenv('FLASK_CONFIG')
+
+config_name = 'development'
+
 app = Flask(__name__)
+app.config.from_object(app_config[config_name])
+app.config.from_pyfile('config.py')
+
 api = Api(app)
 
 
